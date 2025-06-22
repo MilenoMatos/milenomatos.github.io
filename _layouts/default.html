@@ -28,10 +28,9 @@
   <canvas id="background-canvas"></canvas>
   {% endif %}
 
- <main class="container">
+<main class="container{% unless page.url == '/' %} inner-page{% endunless %}">
   {{ content }}
- </main>
-
+</main>
   <footer>
     <p>© 2025 Mileno Oliveira Matos. Todos os direitos reservados.</p>
   </footer>

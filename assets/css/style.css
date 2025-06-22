@@ -103,9 +103,12 @@ nav {
 
 main.container {
   max-width: 900px;
-  /*margin: 2rem auto;*/
   padding: 0 1rem;
   flex: 1;
+}
+
+main.container.inner-page {
+  margin: 2rem auto;
 }
 
 #simulator {
