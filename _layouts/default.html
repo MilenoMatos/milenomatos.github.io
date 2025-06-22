@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Mileno.dev</div>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Início</a></li>
+      <li><a href="{{ '/sobre/' | relative_url }}" class="{% if page.url == '/sobre/' %}active{% endif %}">Sobre</a></li>
+      <li><a href="{{ '/projetos/' | relative_url }}" class="{% if page.url == '/projetos/' %}active{% endif %}">Projetos</a></li>
+    </ul>
+  </nav>
+
+  {% if page.url == '/' %}
+  <header class="hero">
+    <canvas id="background-canvas"></canvas>
+    <div class="animation-container">
+      <h1 id="welcome-text"></h1>
+    </div>
+  </header>
+  {% else %}
+  <canvas id="background-canvas"></canvas>
+  {% endif %}
+
+  <main class="container main-offset-top">
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© 2025 Mileno Oliveira Matos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="{{ '/assets/js/welcome-animation.js' | relative_url }}"></script>
+</body>
+</html>
