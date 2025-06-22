@@ -10,6 +10,15 @@ html, body {
   padding: 0;
 }
 
+#static-background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #e7eb13, #190c92);
+  z-index: -2; /* atrás do canvas */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f2f5;
@@ -58,9 +67,13 @@ nav {
 }
 
 .hero {
-  width: 100%;
-  background: linear-gradient(to right, #e7eb13, #190c92);
-  padding: 3rem 0;
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
   position: relative;
   z-index: 2;
 }
@@ -98,12 +111,11 @@ nav {
 }
 
 #background-canvas {
-  position: fixed;  /* fixa na tela inteira */
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 0; left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -1; /* acima do fundo estático, mas atrás do conteúdo */
   pointer-events: none;
 }
 

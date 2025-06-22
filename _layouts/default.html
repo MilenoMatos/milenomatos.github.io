@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Fundo estático amarelo e azul -->
+  <div id="static-background"></div>
+
   <!-- Canvas fixo animado de partículas no fundo -->
   <canvas id="background-canvas"></canvas>
 
@@ -23,10 +26,8 @@
   <main class="container main-offset-top">
     {% if page.url == '/' %}
     <header class="hero">
-      <div class="hero-inner">
-        <div class="animation-container">
-          <h1 id="welcome-text"></h1>
-        </div>
+      <div class="animation-container">
+        <h1 id="welcome-text"></h1>
       </div>
     </header>
     {% endif %}
