@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00eeff;
+}
+
+.hero {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e7eb13, #190c92);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.animation-container {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  word-wrap: break-word;
+  display: inline-block;
+  background: none;
+  border-radius: 8px;
+}
+
+#welcome-text {
+  color: white;
+  white-space: normal;
+  word-break: break-word;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.main-offset-top {
+  padding-top: 50px !important;
+}
+
+#simulator {
+  display: flex;               /* ativa flexbox */
+  justify-content: center;     /* centraliza horizontalmente */
+  align-items: center;         /* centraliza verticalmente, se a altura permitir */
+  margin: 2rem auto;           /* margem vertical e centralização horizontal */
+  width: 100%;                 /* ocupa toda largura do container pai */
+  max-width: 700px;            /* largura máxima do container */
+  height: auto;                /* altura automática */
+}
+
+#simulator iframe {
+  width: 100%;                /* iframe ocupa toda largura do container #simulator */
+  max-width: 600px;           /* controla a largura máxima do iframe */
+  height: 450px;              /* altura fixa, pode ajustar aqui */
+  border: none;               /* remove borda do iframe */
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #2980b9;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #53ebeb;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #000000;
+  color: white;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1, .animation-container {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    height: auto;
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+  main.container {
+    padding: 0 1rem;
+  }
+}
