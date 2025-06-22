@@ -78,3 +78,4 @@ function draw() {
 
 initPoints();
 draw();
+

@@ -12,3 +12,4 @@ permalink: /sobre/
   <p>Valorant, League of Legends, Warframe e Yu-Gi-Oh! Master Duel.</p>
   <p>Pretendo seguir trabalhar na area de desenvolvimento de jogos, automação, inteligência artifical e possuo interesse em  Cyber Security.</p>
 </section>
+

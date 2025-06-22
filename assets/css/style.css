@@ -103,26 +103,26 @@ nav {
 
 main.container {
   max-width: 900px;
-  margin: 2rem auto;
+  /*margin: 2rem auto;*/
   padding: 0 1rem;
   flex: 1;
 }
 
 #simulator {
-  display: flex;               /* ativa flexbox */
-  justify-content: center;     /* centraliza horizontalmente */
-  align-items: center;         /* centraliza verticalmente, se a altura permitir */
-  margin: 2rem auto;           /* margem vertical e centralização horizontal */
-  width: 100%;                 /* ocupa toda largura do container pai */
-  max-width: 700px;            /* largura máxima do container */
-  height: auto;                /* altura automática */
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  margin: 2rem auto;           
+  width: 100%;                 
+  max-width: 700px;            
+  height: auto;                
 }
 
 #simulator iframe {
-  width: 100%;                /* iframe ocupa toda largura do container #simulator */
-  max-width: 600px;           /* controla a largura máxima do iframe */
-  height: 450px;              /* altura fixa, pode ajustar aqui */
-  border: none;               /* remove borda do iframe */
+  width: 100%;                
+  max-width: 600px;           
+  height: 450px;              
+  border: none;               
 }
 
 section {
