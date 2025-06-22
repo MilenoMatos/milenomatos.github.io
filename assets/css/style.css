@@ -6,17 +6,8 @@
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#static-background {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to right, #e7eb13, #190c92);
-  z-index: -2; /* atrás do canvas */
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -24,11 +15,6 @@ body {
   background-color: #f0f2f5;
   color: #333;
   line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow-x: hidden;
 }
 
 nav {
@@ -39,8 +25,6 @@ nav {
   color: white;
   padding: 1rem 2rem;
   flex-wrap: wrap;
-  z-index: 10;
-  position: relative;
 }
 
 .logo {
@@ -67,36 +51,33 @@ nav {
 }
 
 .hero {
-  background: transparent;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 12px;
-  max-width: 900px;
-  margin: 0 auto 3rem auto;
   position: relative;
-  z-index: 2;
-}
-
-.hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  z-index: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 50vh; /* Ajuste conforme quiser */
+  background: linear-gradient(to right, #e7eb13, #190c92);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .animation-container {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  position: relative;
+  z-index: 1;
   color: white;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: 'Courier New', Courier, monospace;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  max-width: 90vw;
+  margin: 0 auto;
+  word-wrap: break-word;
   display: inline-block;
+  background: none;
+  border-radius: 8px;
 }
 
 #welcome-text {
@@ -111,11 +92,12 @@ nav {
 }
 
 #background-canvas {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* acima do fundo estático, mas atrás do conteúdo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -123,11 +105,7 @@ main.container {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
-  flex: 1 0 auto;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 .main-offset-top {
@@ -135,20 +113,20 @@ main.container {
 }
 
 #simulator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 700px;
-  height: auto;
+  display: flex;               /* ativa flexbox */
+  justify-content: center;     /* centraliza horizontalmente */
+  align-items: center;         /* centraliza verticalmente, se a altura permitir */
+  margin: 2rem auto;           /* margem vertical e centralização horizontal */
+  width: 100%;                 /* ocupa toda largura do container pai */
+  max-width: 700px;            /* largura máxima do container */
+  height: auto;                /* altura automática */
 }
 
 #simulator iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 450px;
-  border: none;
+  width: 100%;                /* iframe ocupa toda largura do container #simulator */
+  max-width: 600px;           /* controla a largura máxima do iframe */
+  height: 450px;              /* altura fixa, pode ajustar aqui */
+  border: none;               /* remove borda do iframe */
 }
 
 section {
@@ -186,8 +164,6 @@ footer {
   color: white;
   margin-top: auto;
   font-size: 0.9rem;
-  position: relative;
-  z-index: 10;
 }
 
 /* Responsividade */

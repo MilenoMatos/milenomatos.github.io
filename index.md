@@ -4,4 +4,4 @@ title: Início
 permalink: /
 ---
 
-<!-- Conteúdo específico do index fica vazio porque o conteúdo do hero está no layout -->
+<!-- conteúdo extra está no layout (header com canvas e animação) -->
