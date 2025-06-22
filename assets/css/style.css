@@ -58,16 +58,24 @@ nav {
 }
 
 .hero {
+  width: 100%;
   background: linear-gradient(to right, #e7eb13, #190c92);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 12px;
-  max-width: 900px;
-  margin: 0 auto 3rem auto;
+  padding: 3rem 0;
   position: relative;
   z-index: 2;
 }
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh; /* Ajuste conforme quiser */
+}
+
 .animation-container {
   font-family: 'Courier New', Courier, monospace;
   font-size: clamp(1.5rem, 4vw, 3rem);
@@ -76,7 +84,6 @@ nav {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: inline-block;
-  margin: 0 auto;
 }
 
 #welcome-text {
@@ -107,6 +114,8 @@ main.container {
   flex: 1 0 auto;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-offset-top {
@@ -114,20 +123,20 @@ main.container {
 }
 
 #simulator {
-  display: flex;               /* ativa flexbox */
-  justify-content: center;     /* centraliza horizontalmente */
-  align-items: center;         /* centraliza verticalmente, se a altura permitir */
-  margin: 2rem auto;           /* margem vertical e centralização horizontal */
-  width: 100%;                 /* ocupa toda largura do container pai */
-  max-width: 700px;            /* largura máxima do container */
-  height: auto;                /* altura automática */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
 
 #simulator iframe {
-  width: 100%;                /* iframe ocupa toda largura do container #simulator */
-  max-width: 600px;           /* controla a largura máxima do iframe */
-  height: 450px;              /* altura fixa, pode ajustar aqui */
-  border: none;               /* remove borda do iframe */
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: none;
 }
 
 section {

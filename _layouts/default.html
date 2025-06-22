@@ -2,12 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} | Mileno Oliveira Matos</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Canvas fixo animado de partículas no fundo -->
   <canvas id="background-canvas"></canvas>
 
   <nav>
@@ -21,11 +22,13 @@
 
   <main class="container main-offset-top">
     {% if page.url == '/' %}
-      <header class="hero">
+    <header class="hero">
+      <div class="hero-inner">
         <div class="animation-container">
           <h1 id="welcome-text"></h1>
         </div>
-      </header>
+      </div>
+    </header>
     {% endif %}
 
     {{ content }}
