@@ -1,2 +1,3 @@
-title: Mileno Oliveira Matos
-theme: jekyll-theme-cayman
+title: Meu Site Modelo
+description: Um site simples usando GitHub Pages com Jekyll e tema Midnight
+theme: jekyll-theme-midnight
