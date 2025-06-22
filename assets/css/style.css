@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,9 +15,11 @@ body {
   background-color: #f0f2f5;
   color: #333;
   line-height: 1.6;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 nav {
@@ -27,6 +30,8 @@ nav {
   color: white;
   padding: 1rem 2rem;
   flex-wrap: wrap;
+  z-index: 10;
+  position: relative;
 }
 
 .logo {
@@ -53,33 +58,25 @@ nav {
 }
 
 .hero {
-  position: relative;
-  z-index: 0;
-  flex: 1 0 auto; 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(to right, #e7eb13, #190c92);
   color: white;
   text-align: center;
-  padding: 0 1rem;
-  min-height: 300px; /* opcional */
-}
-
-.animation-container {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
   position: relative;
-  z-index: 1;
-  color: white;
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  z-index: 2;
+}
+.animation-container {
   font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: white;
   padding: 1rem;
-  max-width: 90vw;
-  margin: 0 auto;
-  word-wrap: break-word;
-  display: inline-block;
-  background: none;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 #welcome-text {
@@ -94,11 +91,11 @@ nav {
 }
 
 #background-canvas {
-  position: absolute;
+  position: fixed;  /* fixa na tela inteira */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   pointer-events: none;
 }
@@ -108,6 +105,8 @@ main.container {
   margin: 2rem auto;
   padding: 0 1rem;
   flex: 1 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .main-offset-top {
@@ -166,6 +165,8 @@ footer {
   color: white;
   margin-top: auto;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 10;
 }
 
 /* Responsividade */
