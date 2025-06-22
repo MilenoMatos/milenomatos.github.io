@@ -2,7 +2,7 @@
 
 Este é o repositório do meu site pessoal, hospedado com [GitHub Pages](https://pages.github.com/) e construído com [Jekyll](https://jekyllrb.com/).
 
-> 📍 Acesse o site em: [https://milenomatos.github.io](https://milenomatos.github.io)
+> 📍 Acesse o site em: [https://milenomatos.github.io](https://milenomatossite.github.io-/)
 
 ## 📄 Sobre o Projeto
 
