@@ -1,7 +1,7 @@
 <h1 align="center">🌐 Site Pessoal - Mileno Oliveira Matos</h1>
 
 <p align="center">
-  Este é o código-fonte do meu site pessoal, desenvolvido com HTML, CSS, JavaScript e publicado utilizando as <strong>tecnologias do GitHub Pages</strong>. O objetivo deste projeto é apresentar meu perfil profissional, meus projetos acadêmicos e minhas experiências na área de tecnologia.
+  Este é o código-fonte do meu site pessoal, desenvolvido com HTML, CSS, JavaScript e publicado utilizando as <strong>tecnologias do GitHub Pages</strong>. O objetivo deste projeto é apresentar meu perfil, meus projetos acadêmicos e minhas experiências na área de tecnologia.
 </p>
 
 ---
@@ -19,7 +19,6 @@
 - Texto animado com efeito de digitação
 - Navegação entre páginas: Início, Sobre e Projetos
 - Simulador incorporado via iframe na página de projetos
-- Publicação gratuita usando GitHub Pages
 
 ---
 
