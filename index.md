@@ -1,8 +1,12 @@
 ---
+---
 layout: default
-title: Início
+title: Início | Mileno Oliveira Matos
 ---
 
-# ✨ Olá, eu sou o Mileno!
+# Mileno.dev
 
-Seja bem-vindo ao meu site pessoal. Aqui você encontra informações sobre mim, meus projetos e formas de contato.
+Bem-vindo ao meu site!
+
+<!-- Você usava uma animação com canvas, que não está nativo no tema. 
+Para simplificar, aqui fica só o texto principal mesmo. -->
