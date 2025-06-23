@@ -10,6 +10,6 @@ permalink: /sobre/
   <p>Cursei 2 anos e meio da minha graduação na UTFPR-SH e agora estou na UNIFAL. Fiz transferência interna no primeiro semestre de 2024.</p>
   <p>Gosto de transformar ideias em código e aprender coisas novas todos os dias. Quando não estou programando, adoro jogar, dentre meus favoritos estão:</p>
   <p>Valorant, League of Legends, Warframe e Yu-Gi-Oh! Master Duel.</p>
-  <p>Pretendo seguir trabalhando nas áreas de desenvolvimento de jogos, automação, inteligência artifical e possuo interesse em  Cyber Security.</p>
+  <p>Pretendo seguir trabalhando nas áreas de desenvolvimento de jogos, automação, inteligência artifical e possuo interesse em  CyberSecurity.</p>
 </section>
 
