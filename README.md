@@ -32,7 +32,7 @@ Você não precisa compilar nada manualmente — o próprio GitHub Pages se enca
 
 ```plaintext
 .
-├── _config.yml                # Configuração do Jekyll
+├── _config.yml               # Configuração do Jekyll
 ├── index.md                  # Página inicial (usa layout default)
 ├── sobre.md                  # Página "Sobre"
 ├── projetos.md               # Página "Projetos"
